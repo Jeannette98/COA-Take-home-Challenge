@@ -38,9 +38,8 @@ To run this challenge:
 1. Navigate to the `Challenges` folder.
 2. Run `node stringTransform` in your terminal to execute the string transformation challenge.
 
-Before running the coding challenges, ensure you have Node.js installed on your machine. You can download Node.js from nodejs.org.
+Before running the coding challenges, ensure you have Node.js installed on your machine. You can download Node.js from nodejs.org
 
 
-### Summary
-This link for my github: https://github.com/Jeannette98 where all task i have been developed.
+
 
