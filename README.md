@@ -24,7 +24,7 @@ To see the project in action:
 Given an array of integers and a target sum, determine if there exists a contiguous subarray within the array that sums up to the target. Return true if such a subarray exists, otherwise return false.
 
 To run this challenge:
-1. Navigate to the `codingChallenge` folder.
+1. Navigate to the `Challenges` folder.
 2. Run `node arrayMap` in your terminal to execute the contiguous subarray sum challenge.
 
 ### Part 2: String Transformation (JavaScript)
@@ -35,7 +35,7 @@ Given a string, transform it based on the following rules:
 - If the length of the string is divisible by both 3 and 5 (i.e., divisible by 15), perform both operations in the order specified above.
 
 To run this challenge:
-1. Navigate to the `codingChallenge` folder.
+1. Navigate to the `Challenges` folder.
 2. Run `node stringTransform` in your terminal to execute the string transformation challenge.
 
 Before running the coding challenges, ensure you have Node.js installed on your machine. You can download Node.js from nodejs.org.
