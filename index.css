@@ -1,0 +1,133 @@
+/* Apply default styles to all elements */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    background: black;
+    box-sizing: border-box;
+    height: max-content; /* Set the height to the maximum content height */
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Item styles */
+  .item {
+    position: relative;
+    transition: transform 0.5ms ease; /* Smooth transition for transform property */
+  }
+  
+  /* Image container styles */
+  .item .image {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Image styles */
+  .item .image img {
+    padding: 0;
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  /* Name text styles */
+  .name {
+    font-family: " DIN Condensed", sans-serif;
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    color: white;
+    bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    transition: all 1s ease; /* Smooth transition for all properties */
+  }
+  
+  /* Country text styles */
+  .country {
+    color: rgba(219, 204, 204, 0.703);
+    bottom: 70px;
+    padding-left: 30px;
+    font-size: 14px;
+    position: absolute;
+    transition: all 1s ease; /* Smooth transition for all properties */
+  }
+  
+  /* "Know more" text styles */
+  .know-more {
+    color: rgba(70, 241, 244, 0.703);
+    bottom: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    position: absolute;
+    display: none; /* Initially hidden */
+    transition: all 1s ease; /* Smooth transition for all properties */
+  }
+  
+  /* Arrow icon styles */
+  .know-more::after {
+    content: '\2192'; /* Unicode for the rightwards arrow */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: rgba(70, 241, 244, 0.703);
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Image hover effect styles */
+  .image-hover-effect {
+    opacity: 0.8;
+    border: 3.5px solid transparent;
+    transition: border-color 0.5ms ease, opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions */
+  }
+  
+  /* Image hover effect on hover */
+  .image-hover-effect:hover {
+    opacity: 0.2;
+    transform: scale(1.1);
+    filter: blur(2px);
+  }
+  
+  /* Name text transition on item hover */
+  .item:hover .name {
+    transform: translateY(-20px);
+  }
+  
+  /* Country text transition on item hover */
+  .item:hover .country {
+    transform: translateY(-20px);
+  }
+  
+  /* Show "know more" text on item hover */
+  .item:hover .know-more {
+    display: block;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+    .name {
+      display: none; /* Hide name text on smaller screens */
+    }
+    .country {
+      display: none; /* Hide country text on smaller screens */
+    }
+    .know-more {
+      display: none; /* Hide "know more" text on smaller screens */
+    }
+  }
+  
